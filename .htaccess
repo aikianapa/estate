@@ -1,0 +1,35 @@
+DirectoryIndex index.php
+AddDefaultCharset UTF-8
+
+<ifModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css text/javascript application/javascript application/x-javascript
+</ifModule>
+
+
+RewriteBase /
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} !\?
+RewriteCond %{REQUEST_URI} !\&
+RewriteCond %{REQUEST_URI} !\=
+RewriteCond %{REQUEST_URI} !\.
+RewriteCond %{REQUEST_URI} ![^\/]$
+RewriteCond %{REQUEST_URI} ![^\/ajax]\/
+RewriteRule ^(.*)\/$ /$1 [R=301,L]
+
+Redirect 301 /home /
+RewriteCond %{HTTP_HOST} ^www\.(.*)$
+RewriteRule ^(.*)$ http://%1/$1 [L,R=301]
+
+RewriteRule ^database(.*)$ index.php [L,QSA]
+
+
+RewriteRule ^(.*)\.less$ /module/less/$1\.css [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ index.php [L,QSA]
+
+RewriteCond %{REQUEST_URI} ^/tpl/$
+RewriteRule ^.*$ /? [R=301,L]
