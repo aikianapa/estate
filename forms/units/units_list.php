@@ -51,8 +51,7 @@
                       <button type="button" class="btn btn-primary mr-3" data-watcher="filter=#{{_form}}ListFiltered&tpl=false">{{_lang.get_list}}</button>
                       <button type="button" class="btn btn-secondary"  data-watcher="filter=#{{_form}}ListFiltered&tpl=false&clear=true">{{_lang.clear}}</button>
                     </div>
-
-              </form>
+                </form>
               </div>
               <div class="col-sm-9">
                 <div class="table-responsive" data-wb="role=formdata&tpl=true" id="{{_form}}ListFiltered">
