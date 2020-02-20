@@ -1,6 +1,6 @@
 
                 <!--Start of Blog Area-->
-                <div class="blog-area pt-70 pb-80 bg-light">
+                <div class="blog-area pt-70 pb-120 bg-light">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
@@ -16,8 +16,8 @@
                                 <div class="col-xs-12">
                                     <div class="single-blog hover-effect-one fix">
                                         <div class="blog-image box-hover block">
-                                            <a href="blog-details.html" class="block white-hover">
-                                                <img src="images/blog/1.jpg" alt="">
+                                            <a href="/news/{{id}}/{{wbFurlGenerate({{header}})}}" class="block white-hover">
+                                                <img src="/thumb/368x235/src/uploads/{{_form}}/{{id}}/{{images.0.img}}" class="img-responsive"  >
                                                 <span class="blog-text block bg-lemon pt-4">10 <span class="block pt-2 ">OCT</span></span>
                                             </a>
                                         </div>
@@ -30,7 +30,7 @@
                                             <h5 class="pt-22 mb-17"><a href="blog-details.html">{{header}}</a></h5>
                                             <p class="mb-20" data-wb-where='descr = ""'>{{wbGetWords({{text}},15)}}</p>
                                             <p class="mb-20" data-wb-where='descr > ""'>{{descr}}</p>
-                                            <a href="blog-details.html" class="button">Read More</a>
+                                            <a href="blog-details.html" class="button">{{_lang.more}}</a>
                                         </div>
                                     </div>
                                 </div>

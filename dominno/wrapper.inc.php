@@ -157,7 +157,7 @@
 						<div class="container">
 							<div class="row">
 								<div class="col-md-2 col-xs-12">
-									<div class="logo"><a href="index.html"><img src="images/logo/logo.png" alt="DomInno"></a></div>
+									<div class="logo"><a href="/"><img src="images/logo/logo.png" alt="DomInno"></a></div>
 								</div>
 								<div class="col-md-10 hidden-sm hidden-xs">
 									<div class="pull_right" data-wb="role=include&template=menu-desktop.inc.php">
@@ -240,14 +240,9 @@
                             </div>
                             <div class="col-lg-3 hidden-md hidden-sm pl-80 col-xs-12">
                                 <div class="single-footer-widget">
-                                    <h3 class="text-white text-uppercase mb-17">QUICK LINK</h3>
-                                    <ul class="footer-list">
-                                        <li><a href="#">Services</a></li>
-                                        <li><a href="#">Agent</a></li>
-                                        <li><a href="#">Properties</a></li>
-                                        <li><a href="#">Features</a></li>
-                                        <li><a href="#">From Blog</a></li>
-                                        <li><a href="#">Contact</a></li>
+                                    <h3 class="text-white text-uppercase mb-17">Меню</h3>
+                                    <ul class="footer-list" data-wb="role=tree&item=mainmenu&level=0">
+                                        <li><a href="{{data.link}}">{{name}}</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -281,7 +276,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="footer-text">
-                                    <span class="block">Copyright&copy; 2016 <a href="#">Devitems</a>. All rights reserved.</span>
+                                    <span class="block">Copyright&copy; {{date("Y")}} Devitems. All rights reserved.</span>
                                 </div>
                             </div>
                         </div>

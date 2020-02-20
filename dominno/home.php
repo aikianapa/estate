@@ -120,7 +120,7 @@
                                     <span class="opacity-text text-uppercase">{{header}}</span>
                                     <h2 class="uppercase">{{header}}</h2>
                                 </div>
-                                <div>{{text}}</div>
+                                <div>{{descr}}</div>
                             </div>
                         </div>
                     </div>
@@ -353,51 +353,5 @@
                 	</div>
                 </div>
                 <!--End of Fun Factor Area-->
-
 <meta data-wb="role=include&template=widget.news.inc.php">
-
-				<!--Start of Client area-->
-				<div class="client-area ptb-115">
-					<div class="container">
-						<div class="row">
-							<div class="client-carousel carousel-none">
-								<div class="col-xs-12">
-									<div class="single-client block pt-7 pb-7">
-										<a href="#" class="block">
-											<span><img src="images/client/1.png" alt=""></span>
-										</a>
-									</div>
-								</div>
-								<div class="col-xs-12">
-									<div class="single-client block pt-7 pb-7">
-										<a href="#" class="block">
-											<span><img src="images/client/2.png" alt=""></span>
-										</a>
-									</div>
-								</div>
-								<div class="col-xs-12">
-									<div class="single-client block pt-7 pb-7">
-										<a href="#" class="block">
-											<span><img src="images/client/3.png" alt=""></span>
-										</a>
-									</div>
-								</div>
-								<div class="col-xs-12">
-									<div class="single-client block pt-7 pb-7">
-										<a href="#" class="block">
-											<span><img src="images/client/4.png" alt=""></span>
-										</a>
-									</div>
-								</div>
-								<div class="col-xs-12">
-									<div class="single-client block pt-7 pb-7">
-										<a href="#" class="block">
-											<span><img src="images/client/5.png" alt=""></span>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 </div>
