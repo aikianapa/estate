@@ -39,6 +39,9 @@ function unitsAfterItemSave($Item) {
     wbItemSave("complex",$compl);
 }
 
-
+function unitsBeforeItemShow(&$Item) {
+    $Item["image"] = wbGetItemImg($Item);
+    return $Item;
+}
 
 ?>
