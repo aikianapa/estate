@@ -22,4 +22,9 @@ function complexEmptyItemRead(&$Item = []) {
     return $Item;
 }
 
+function complexBeforeItemShow(&$Item) {
+    $Item["image"] = wbGetItemImg($Item);
+    return $Item;
+}
+
 ?>
