@@ -102,7 +102,7 @@
                               </div>
                               <div class="property-image">
                                 <a href="properties-details.html" class="block dark-hover">
-                                  <img src="/thumb/160x110/src/{{image}}" alt="">
+                                  <img data-wb="role=thumbnail&width=160&height=110" src="0" alt="">
                                   <span class="img-button text-uppercase">{{_lang.more}}</span>
                                 </a>
                               </div>
