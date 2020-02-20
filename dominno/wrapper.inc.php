@@ -52,7 +52,7 @@
         <![endif]-->
 
         <!--Main Wrapper Start-->
-        <div class="wrapper bg-white fix">
+        <div class="wrapper bg-white fix boxed-layout">
             <!--Bg White Start-->
             <div class="bg-white">
                 <!--Header Area Start-->

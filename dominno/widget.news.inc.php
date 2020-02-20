@@ -17,7 +17,7 @@
                                     <div class="single-blog hover-effect-one fix">
                                         <div class="blog-image box-hover block">
                                             <a href="/news/{{id}}/{{wbFurlGenerate({{header}})}}" class="block white-hover">
-                                                <img src="/thumb/368x235/src/uploads/{{_form}}/{{id}}/{{images.0.img}}" class="img-responsive"  >
+                                                <img data-wb="role=thumbnail&width=368&height=235" src="0" class="img-responsive"  >
                                                 <span class="blog-text block bg-lemon pt-4">10 <span class="block pt-2 ">OCT</span></span>
                                             </a>
                                         </div>

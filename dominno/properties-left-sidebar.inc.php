@@ -202,7 +202,8 @@
         </div>
       </div>
       <div class="property-image">
-        <a href="properties-details.html" class="block dark-hover"><img src="images/properties/4.jpg" alt="">
+        <a href="properties-details.html" class="block dark-hover">
+          <img data-wb="role=thumbnail&width=368&height=287" src="0" alt="">
           <span class="img-button text-uppercase">{{_lang.more}}</span>
           <span class="p-tag bg-lemon">FOR SALE</span>
         </a>
