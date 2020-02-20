@@ -244,7 +244,3 @@
   </div>
 </div>
 <!--End of Featured Property Area-->
-<script type="text/locale">
-[ru]
-  more = "Подробно"
-</script>

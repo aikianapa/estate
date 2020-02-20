@@ -109,7 +109,7 @@
 				</div>
                 <!--End of Google Map Area-->
                 <!--Start of About Area-->
-                <div class="about-area mt-120 pb-110 banner-1">
+                <div class="about-area mt-120 pb-110">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6">
@@ -120,7 +120,7 @@
                                     <span class="opacity-text text-uppercase">{{header}}</span>
                                     <h2 class="uppercase">{{header}}</h2>
                                 </div>
-                                <div>{{descr}}</div>
+                                <div>{{text}}</div>
                             </div>
                         </div>
                     </div>

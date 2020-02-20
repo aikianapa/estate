@@ -514,4 +514,8 @@
         <script src="js/main.js"></script>
         <script src="/engine/js/wbapp.js"></script>
     </body>
+<script type="text/locale">
+[ru]
+more = "Подробно"
+</script>
 </html>
