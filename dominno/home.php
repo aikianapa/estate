@@ -113,7 +113,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6">
-                                <img src="/thumb/620x362/src/uploads/pages/home/{{images.0.img}}" class="img-responsive"  >
+                                <img data-wb="role=thumbnail&width=620&height=362" src="0" class="img-responsive"  >
                             </div>
                             <div class="col-md-6">
                                 <div class="section-title mb-38 mt-31">
@@ -154,8 +154,8 @@
 										</div>
 										<div class="property-image">
 											<a href="properties-details.html" class="block dark-hover">
-                        <img src="/thumb/370x290/src/{{image}}" alt="">
-												<span class="img-button text-uppercase">More Details</span>
+                        <img data-wb="role=thumbnail&width=370&height=290" src="0" alt="">
+												<span class="img-button text-uppercase">{{_lang.more}}</span>
 											</a>
 											<div class="hover-container pl-15 pr-15 pt-16 pb-15">
 												<div class="hover-item">
