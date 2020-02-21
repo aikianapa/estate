@@ -103,7 +103,7 @@
 
 
       </div>
-      <div class="modal-footer" data-wb="role=include&form=common_close_save&hide=true"></div>
+      <div class="modal-footer" data-wb="role=include&form=common_close_save"></div>
     </div>
   </div>
 </div>
