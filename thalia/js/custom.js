@@ -44,7 +44,6 @@
 		$().enllax();
 	}
 
-
 	//Input number
 
     jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up"></div><div class="quantity-button quantity-down"></div></div>').insertAfter('.quantity input');
@@ -79,6 +78,22 @@
       });
 
     });
+
+
+			$(document).on("watcher_filter",function(e,name){
+				if (name == "#propertiesList" && $("#propertiesFilterForm").length) {
+						propertiesFilterForm();
+				}
+			});
+
+
+			function propertiesFilterForm() {
+				var $list = $("#propertiesList");
+				var $form = $("#propertiesFilterForm");
+				if (!$form.length || !$list.length) return;
+
+
+			}
 
 
 	$(document).ready(function() {
@@ -331,18 +346,46 @@
 		});
 
 
+		$( ".input-range" ).slider({
+      range: true,
+      min: 0,
+      max: 500,
+      values: [ 75, 300 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+      }
+    });
+
 		/* Range slider */
 
-		var range = $('.input-range'),
-		value = $('.range-value');
+		if ($("#propertiesFilterForm").length) {
+				$("#propertiesFilterForm .slider-range.price")
+						.attr("data-min",$("#propertiesList").attr("data-min-price"))
+						.attr("data-max",$("#propertiesList").attr("data-max-price"));
+				$("#propertiesFilterForm .slider-range.square")
+						.attr("data-min",$("#propertiesList").attr("data-min-square"))
+						.attr("data-max",$("#propertiesList").attr("data-max-square"));
+		}
 
-		value.html(range.attr('value') + ' $');
 
-		range.on('input', function() {
-			value.html(this.value + ' $');
+		$( ".slider-range").each(function(){
+				let min = $(this).attr("data-min") * 1;
+				let max = $(this).attr("data-max") * 1;
+				$(this).parent().children("span").html(min + " - " + max);
+				$(this).slider({
+		        range: true,
+		        min: min,
+		        max: max,
+		        values: [ min, max ],
+		        slide: function( event, ui ) {
+								$(this).prev(".slider-values").find(".min").val(ui.values[ 0 ]);
+								$(this).prev(".slider-values").find(".max").val(ui.values[ 1 ]);
+								$(this).parent().children("span").html(ui.values[ 0 ] + " - " + ui.values[ 1 ]);
+		        }
+		    });
 		});
 
-	});
+		});
 
 
 

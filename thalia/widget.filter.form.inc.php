@@ -38,15 +38,26 @@
       </div>
     </div>
     <div class="col-12 pt-5">
-      <h6 class="color-white mb-3">Max night price:</h6>
-      <div class="selecteurPrix">
         <div class="range-slider">
-          <input class="input-range" type="range" value="100" min="1" max="500">
-          <div class="valeurPrix">
-            <span class="range-value"></span>
-          </div>
+             <span class="range-value pull-right"></span>
+             <h6 class="color-white mb-3">Цена:</h6>
+             <div class="slider-values">
+                <input type="hidden" class="min" name="price__min" />
+                <input type="hidden" class="max" name="price__max" />
+            </div>
+            <div class="slider-range price" data-min="" data-max=""></div>
         </div>
-      </div>
+    </div>
+    <div class="col-12 pt-5">
+        <div class="range-slider">
+             <span class="range-value pull-right"></span>
+             <h6 class="color-white mb-3">Площадь:</h6>
+             <div class="slider-values">
+                <input type="hidden" class="min" name="square__min" />
+                <input type="hidden" class="max" name="square__max" />
+            </div>
+            <div class="slider-range square" data-min="" data-max=""></div>
+        </div>
     </div>
     <div class="col-12 col-md-6 col-lg-12 pt-5">
       <h6 class="color-white mb-3">Дополнительно:</h6>

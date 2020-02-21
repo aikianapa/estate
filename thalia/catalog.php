@@ -25,7 +25,12 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mt-4 mt-lg-0">
-            <div class="row" id="propertiesList" data-wb="role=foreach&form=units&tpl=true" data-wb-if='active = "on"'>
+            <div class="row" id="propertiesList" data-wb="role=foreach&form=units&tpl=true" data-wb-if='active = "on"'
+            data-wb-return='{
+                "min":["price","square"],
+                "max":["price","square"],
+                "count": true
+            }'>
               <div class="col-lg-6 mb-4" data-scroll-reveal="enter bottom move 50px over 0.7s after 0.2s" >
                 <meta data-wb="role=include&template=widget.room.box.inc.php" />
               </div>
