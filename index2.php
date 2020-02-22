@@ -5,6 +5,9 @@ $startTime = microtime(true);
 
 require_once __DIR__ . '/engine/functions.php';
 
+
+
+die;
 ini_set('display_errors', true);
 
 $tpl=<<<DOM

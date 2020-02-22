@@ -1,4 +1,5 @@
 <?php
+phpinfo();
 require_once __DIR__ . "/engine/functions.php";
 ini_set('display_errors', TRUE);
 
@@ -44,7 +45,7 @@ $tpl=<<<DOM
 <h1>Sample form</h1>
     <form method="post" data-wb='role=formdata&form=test&item=test'>
     <h3>Tree data structure</h3>
-    <input data-wb="role=tree&form=test&item=test&field=roleprop" name="roleprop">
+    <input data-wb="role=tree&form=admin&item=interface&field=menu" name="roleprop">
     <h3>Multiinput</h3>
     <div data-wb="role=multiinput" name="multi">
         <div class="col"><input name="sdf" placeholder="fld1" class="form-control"></div>
