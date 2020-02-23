@@ -13,7 +13,7 @@
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-12 parallax-fade-top">
-						<div class="hero-text">Rooms Gallery</div>
+						<div class="hero-text" data-wb="role=tree&item=types&branch=units->{{type}}&children=false"><span>{{name}}</span></div>
 					</div>
 				</div>
 			</div>
@@ -128,7 +128,7 @@
 
 	<div class="section padding-bottom over-hide">
 		<div class="container">
-			<div class="row justify-content-center" id="propertiesList" data-wb="role=foreach&form=units&tpl=true&limit=3">
+			<div class="row justify-content-center" id="propertiesList" data-wb="role=foreach&form=units&tpl=true&limit=3" data-wb-if='district="{{district}}" AND type="{{type}}" AND id != "{{id}}"'>
 				<div class="col-lg-4 mt-4" data-scroll-reveal="enter bottom move 50px over 0.7s after 0.2s">
 					<meta data-wb="role=include&template=widget.room.box.inc.php" />
 				</div>
