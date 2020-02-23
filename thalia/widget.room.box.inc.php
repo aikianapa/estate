@@ -3,18 +3,16 @@
   <div class="room-per">
     {{price}} тыс.
   </div>
-  <a href="rooms-gallery.html">
+  <a href="/units/{{id}}/">
   <img data-wb="role=thumbnail&width=540&height=360" src="0" alt="">
 </a>
   <div class="room-box-in">
     <h5 class="" data-wb="role=tree&item=types&branch=units&branch={{type}}"><span>{{name}}</span></h5>
-    <p class="mt-3">Sed ut perspiciatis unde omnis, totam rem aperiam, eaque ipsa
-      quae ab illo inventore veritatis et.</p>
     <div class="room-icons mt-4 pt-4">
       <img src="img/icons/paint.svg" title= "С отделкой" alt="" data-wb-where='finish="on"'>
       <img src="img/icons/floor.svg" title= "{{square}} кв.м." alt="">
       <span>{{square}} м<sup>2</sup></span>
-      <a href="rooms-gallery.html">{{_lang.more}}</a>
+      <a href="/units/{{id}}/">{{_lang.more}}</a>
     </div>
   </div>
 </div>

@@ -1,9 +1,10 @@
 <?php
-//wbRouterAdd("/reply/(:any)","/controller:form/form:replyes/mode:chat/item:$1");
+wbRouterAdd("/units/(:any)","/controller:form/form:units/mode:show/item:$1/tpl:unit.php");
 
 function unitsAfterItemRead($Item) {
     $compl = wbItemRead("complex",$Item["complex"]);
     $Item["district"] = $compl["district"];
+    $Item["metro"] = $compl["metro"];
     return $Item;
 }
 
