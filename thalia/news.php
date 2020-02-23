@@ -28,7 +28,7 @@
 					<h3 class="text-center padding-bottom-small">{{header}}</h3>
 				</div>
 				<div class="section clearfix"></div>
-				<div data-wb="role=foreach&form=news&sort=_created:d&hide=true" data-wb-if='active="on"'>
+				<div data-wb="role=foreach&form=news&sort=_created:a&hide=true" data-wb-if='active="on"'>
 					<div class="col-md-6 col-xl-4 mt-4 mt-md-0">
 					<div class="room-box background-white">
 						<a href="/news/{{id}}/">
