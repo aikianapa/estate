@@ -27,11 +27,17 @@
 					<style>.amenities img {filter:invert(1);}</style>
 					<div class="col-6 col-sm-6 col-md-4 col-lg-2 text-center">
 						<div class="amenities">
+							<img src="img/icons/rooms.svg" alt="">
+							<p data-wb="role=tree&item=types&branch=units->{{type}}&children=false"><span>{{name}}</span></p>
+						</div>
+					</div>
+					<div class="col-6 col-sm-6 col-md-4 col-lg-2 text-center">
+						<div class="amenities">
 							<img src="img/icons/floor.svg" alt="">
 							<p>{{square}} м<sup>2</sup></p>
 						</div>
 					</div>
-					<div class="col-6 col-sm-6 col-md-4 col-lg-2 text-center" data-wb-where='finish="o"'>
+					<div class="col-6 col-sm-6 col-md-4 col-lg-2 text-center" data-wb-where='finish="on"'>
 						<div class="amenities">
 							<img src="img/icons/paint.svg" alt="">
 							<p>отделка</p>
@@ -70,141 +76,50 @@
 								<a class="prev-rooms-sync-1"></a>
 								<a class="next-rooms-sync-1"></a>
 							</div>
-							<div id="rooms-sync1" class="owl-carousel">
+							<div id="rooms-sync1" class="owl-carousel" data-wb="role=foreach&from=images">
 								<div class="item">
-									<img src="img/gallery/2.jpg" alt="">
-								</div>
-								<div class="item">
-									<img src="img/gallery/3.jpg" alt="">
-								</div>
-								<div class="item">
-									<img src="img/gallery/4.jpg" alt="">
-								</div>
-								<div class="item">
-									<img src="img/gallery/5.jpg" alt="">
-								</div>
-								<div class="item">
-									<img src="img/gallery/6.jpg" alt="">
-								</div>
-								<div class="item">
-									<img src="img/gallery/7.jpg" alt="">
-								</div>
-								<div class="item">
-									<img src="img/gallery/8.jpg" alt="">
-								</div>
-								<div class="item">
-									<img src="img/gallery/9.jpg" alt="">
+									<img data-wb="role=thumbnail&width=750&height=500" src="/uploads/{{_form}}/{{_item}}/{{img}}" alt="">
 								</div>
 							</div>
 						</div>
-						<div class="section">
+						<div class="section" data-wb="role=foreach&from=images">
 							<div id="rooms-sync2" class="owl-carousel">
 								<div class="item">
-									<img src="img/gallery/2-s.jpg" alt="">
-								</div>
-								<div class="item">
-									<img src="img/gallery/3-s.jpg" alt="">
-								</div>
-								<div class="item">
-									<img src="img/gallery/4-s.jpg" alt="">
-								</div>
-								<div class="item">
-									<img src="img/gallery/5-s.jpg" alt="">
-								</div>
-								<div class="item">
-									<img src="img/gallery/6-s.jpg" alt="">
-								</div>
-								<div class="item">
-									<img src="img/gallery/7-s.jpg" alt="">
-								</div>
-								<div class="item">
-									<img src="img/gallery/8-s.jpg" alt="">
-								</div>
-								<div class="item">
-									<img src="img/gallery/9-s.jpg" alt="">
+									<img data-wb="role=thumbnail&width=150&height=100" src="/uploads/{{_form}}/{{_item}}/{{img}}" alt="">
 								</div>
 							</div>
 						</div>
-						<div class="section pt-5">
-							<h5>discription</h5>
-							<p class="mt-3">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+						<div class="section pt-5" data-wb="role=formdata&form=complex&item={{complex}}">
+							<h5>О комплексе {{name}}</h5>
+							<div class="mt-3">{{text}}</div>
 						</div>
 						<div class="section pt-4">
 							<div class="row">
 								<div class="col-12">
-									<h5 class="mb-3">Overview</h5>
+									<h5 class="mb-3">Характеристики</h5>
 								</div>
 								<div class="col-lg-6">
-									<p><strong class="color-black">Room size:</strong> 47 - 54 sq m</p>
-									<p><strong class="color-black">Occupancy:</strong> Up to 4 adulds</p>
-									<p><strong class="color-black">View:</strong> Sea view</p>
-									<p><strong class="color-black">Smoking:</strong> No smoking</p>
+									<p><strong class="color-black">Площадь:</strong><span> {{square}} м<sup>2</sup></span></p>
+									<p data-wb="role=tree&item=types&branch=units->{{type}}&children=false"><strong class="color-black">Тип:</strong> <span> {{name}}</span></p>
+									<p data-wb-where='finish="on"'><strong class="color-black">Отделка:</strong> Да</p>
+									<p data-wb-where='finish#"on"'><strong class="color-black">Отделка:</strong> Нет</p>
+									<p><strong class="color-black">Цена:</strong> {{price}} тыс.руб.</p>
 								</div>
-								<div class="col-lg-6">
-									<p><strong class="color-black">Bed size:</strong> King and regular</p>
-									<p><strong class="color-black">Location:</strong> Big room 2nd floor</p>
-									<p><strong class="color-black">Room service:</strong> Yes</p>
-									<p><strong class="color-black">Swimming pool:</strong> Yes</p>
+								<div class="col-lg-6" data-wb="role=formdata&form=complex&item={{complex}}">
+									<p data-wb="role=tree&item=city&branch=districts->{{district}}&children=false"><strong class="color-black">Район:</strong><span> {{name}}</span></p>
+									<p data-wb="role=tree&item=city&branch=districts->{{district}}->{{metro}}&children=false"><strong class="color-black">Метро:</strong> <span> {{name}}</span></p>
+									<p><strong class="color-black">Расстояние до метро:</strong> {{metro_notice}}</p>
+									<p><strong class="color-black">Срок сдачи:</strong> {{quart}} квартал {{year}}</p>
 								</div>
 							</div>
 						</div>
 						<div class="section pt-4">
-							<h5>Features</h5>
-							<p class="mt-3">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+							<h5>Описание</h5>
+							<div class="mt-3">{{text}}</div>
 						</div>
 					</div>
 					<div class="col-lg-4 order-first order-lg-last">
-						<div class="section background-dark p-4">
-							<div class="row">
-								<div class="col-12">
-									<div class="input-daterange input-group" id="flight-datepicker">
-										<div class="row">
-											<div class="col-12">
-												<div class="form-item">
-													<span class="fontawesome-calendar"></span>
-													<input class="input-sm" type="text" autocomplete="off" id="start-date-1" name="start" placeholder="chech-in date" data-date-format="DD, MM d"/>
-													<span class="date-text date-depart"></span>
-												</div>
-											</div>
-											<div class="col-12 pt-4">
-												<div class="form-item">
-													<span class="fontawesome-calendar"></span>
-													<input class="input-sm" type="text" autocomplete="off" id="end-date-1" name="end" placeholder="check-out date" data-date-format="DD, MM d"/>
-													<span class="date-text date-return"></span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-12">
-									<div class="row">
-										<div class="col-12 pt-4">
-											<select name="adults" class="wide">
-												<option data-display="adults">adults</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</div>
-										<div class="col-12 pt-4">
-											<select name="children" class="wide">
-												<option data-display="children">children</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</div>
-									</div>
-								</div>
-								<div class="col-12 pt-4">
-									<a class="booking-button" href="search.html">book now</a>
-								</div>
-							</div>
-						</div>
+						<meta data-wb="role=include&template=widget.filter.form.inc.php" />
 					</div>
 				</div>
 			</div>
@@ -213,78 +128,9 @@
 
 	<div class="section padding-bottom over-hide">
 		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-4" data-scroll-reveal="enter bottom move 50px over 0.7s after 0.2s">
-					<div class="room-box background-grey">
-						<div class="room-name">suite tanya</div>
-						<div class="room-per">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-						</div>
-						<img src="img/room3.jpg" alt="">
-						<div class="room-box-in">
-							<h5 class="">pool suite</h5>
-							<p class="mt-3">Sed ut perspiciatis unde omnis, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</p>
-							<a class="mt-1 btn btn-primary" href="rooms-gallery.html">book from 130$</a>
-							<div class="room-icons mt-4 pt-4">
-								<img src="img/5.svg" alt="">
-								<img src="img/2.svg" alt="">
-								<img src="img/3.svg" alt="">
-								<a href="rooms-gallery.html">full info</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 mt-4 mt-lg-0" data-scroll-reveal="enter bottom move 50px over 0.7s after 0.4s">
-					<div class="room-box background-grey">
-						<div class="room-name">suite helen</div>
-						<div class="room-per">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star-o"></i>
-						</div>
-						<img src="img/room4.jpg" alt="">
-						<div class="room-box-in">
-							<h5 class="">small room</h5>
-							<p class="mt-3">Sed ut perspiciatis unde omnis, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</p>
-							<a class="mt-1 btn btn-primary" href="rooms-gallery.html">book from 80$</a>
-							<div class="room-icons mt-4 pt-4">
-								<img src="img/4.svg" alt="">
-								<img src="img/2.svg" alt="">
-								<img src="img/6.svg" alt="">
-								<a href="rooms-gallery.html">full info</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 mt-4 mt-lg-0" data-scroll-reveal="enter bottom move 50px over 0.7s after 0.6s">
-					<div class="room-box background-grey">
-						<div class="room-name">suite andrea</div>
-						<div class="room-per">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-						</div>
-						<img src="img/room5.jpg" alt="">
-						<div class="room-box-in">
-							<h5 class="">Apartment</h5>
-							<p class="mt-3">Sed ut perspiciatis unde omnis, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</p>
-							<a class="mt-1 btn btn-primary" href="rooms-gallery.html">book from 110$</a>
-							<div class="room-icons mt-4 pt-4">
-								<img src="img/5.svg" alt="">
-								<img src="img/2.svg" alt="">
-								<img src="img/3.svg" alt="">
-								<a href="rooms-gallery.html">full info</a>
-							</div>
-						</div>
-					</div>
+			<div class="row justify-content-center" id="propertiesList" data-wb="role=foreach&form=units&tpl=true&limit=3">
+				<div class="col-lg-4 mt-4" data-scroll-reveal="enter bottom move 50px over 0.7s after 0.2s">
+					<meta data-wb="role=include&template=widget.room.box.inc.php" />
 				</div>
 			</div>
 		</div>
@@ -329,29 +175,4 @@
 		</div>
 	</div>
 
-	<div class="section padding-top-bottom-small background-black over-hide footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3 text-center text-md-left">
-					<img src="img/logo.png" alt="">
-					<p class="color-grey mt-4">Avenue Street 3284<br>Thessaloniki</p>
-				</div>
-				<div class="col-md-4 text-center text-md-left">
-					<h6 class="color-white mb-3">information</h6>
-					<a href="tandc.html">terms &amp; conditions</a>
-					<a href="services.html">services</a>
-					<a href="restaurant.html">restaurant</a>
-					<a href="testimonials.html">testimonials</a>
-					<a href="gallery.html">gallery &amp; images</a>
-				</div>
-				<div class="col-md-5 mt-4 mt-md-0 text-center text-md-left logos-footer">
-					<h6 class="color-white mb-3">about us</h6>
-					<p class="color-grey mb-4">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
-					<img src="img/logos/1.png" alt="">
-					<img src="img/logos/2.png" alt="">
-					<img src="img/logos/3.png" alt="">
-				</div>
-			</div>
-		</div>
-	</div>
 </div>
