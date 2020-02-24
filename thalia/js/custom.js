@@ -5,7 +5,7 @@
 
 	//Preloader
 
-	$(window).on('load', function(e) { // makes sure the whole site is loaded
+	$(document).on('js-done', function(e) { // makes sure the whole site is loaded
 		$(".loader__figure").fadeOut(); // will first fade out the loading animation
 		$(".loader").delay(500).fadeOut("slow"); // will fade out the white DIV that covers the website.
 	})
@@ -99,7 +99,7 @@
 	$(document).ready(function() {
 
 		//Date Picker
-
+/*
 		var dateSelect     = $('#flight-datepicker');
 		var dateDepart     = $('#start-date');
 		var dateReturn     = $('#end-date');
@@ -130,7 +130,7 @@
 			maxViewMode: 0,
 			startDate: "now"
 		});
-
+*/
 
 		//Scroll back to top
 

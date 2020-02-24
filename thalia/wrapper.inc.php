@@ -30,25 +30,25 @@
 	<meta name="theme-color" content="#212121"/>
   <meta name="msapplication-navbutton-color" content="#212121"/>
   <meta name="apple-mobile-web-app-status-bar-style" content="#212121"/>
-
-	<!-- Web Fonts
-	================================================== -->
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"/>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
-
 	<base href="/thalia/">
-	<!-- CSS
-	================================================== -->
-	<link rel="stylesheet" href="css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="css/ionicons.min.css"/>
-	<link rel="stylesheet" href="css/jquery-ui.min.css"/>
-	<link rel="stylesheet" href="css/datepicker.css"/>
-	<link rel="stylesheet" href="css/jquery.fancybox.min.css"/>
-	<link rel="stylesheet" href="css/owl.carousel.css"/>
-	<link rel="stylesheet" href="css/owl.transitions.css"/>
-	<link rel="stylesheet" href="css/style.css"/>
-	<link rel="stylesheet" href="css/colors/color.css"/>
+	<link rel="stylesheet" href="css/preloader.css"/>
+
+<script type="wbapp">
+	wbapp.loadStyles([
+		 "https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+		,"https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext"
+		,"css/bootstrap.min.css"
+		,"css/font-awesome.min.css"
+		,"css/ionicons.min.css"
+		,"css/jquery-ui.min.css"
+		,"css/datepicker.css"
+		,"css/jquery.fancybox.min.css"
+		,"css/owl.carousel.css"
+		,"css/owl.transitions.css"
+		,"css/style.css"
+		,"css/colors/color.css"
+	],"styles-done");
+</script>
 
 	<!-- Favicons
 	================================================== -->
@@ -166,13 +166,16 @@
 	<!-- JAVASCRIPT
     ================================================== -->
 	<script src="js/jquery.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/plugins.js"></script>
-
-	<!--script src="js/reveal-home.js"></script-->
-	<script src="js/custom.js"></script>
 	<script src="/engine/js/wbapp.js"></script>
+
+	<script type="wbapp">
+		wbapp.loadScripts([
+			  "js/popper.min.js"
+			 ,"js/bootstrap.min.js"
+			 ,"js/plugins.js"
+			 ,"js/custom.js"
+		],"js-done");
+	</script>
 <!-- End Document
 ================================================== -->
 </body>

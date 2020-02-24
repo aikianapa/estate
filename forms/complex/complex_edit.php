@@ -48,6 +48,8 @@
                 </div>
               </div>
 
+              <input data-wb="role=module&load=yamap" name="geopos">
+
               <div class="form-group row">
                 <label class="col-sm-3 form-control-label">{{_lang.address}}</label>
                 <div class="col-sm-9">

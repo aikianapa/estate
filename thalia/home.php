@@ -497,3 +497,6 @@
     </div>
   </div>
 </div>
+<script type="wbapp" data-wb-where='"{{_item}}"="home"'>
+	wbapp.loadScripts(["js/reveal-home.js"]);
+</script>
