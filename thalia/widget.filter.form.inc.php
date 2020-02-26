@@ -2,7 +2,7 @@
   <form id="propertiesFilterForm">
   <div class="row">
     <div class="col-12">
-      <div class="input-daterange input-group" id="flight-datepicker">
+      <div class="input-group" id="flight-datepicker">
         <div class="row">
           <div class="col-12">
             <select data-wb="role=tree&item=city&branch=districts&parent=false&children=false"

@@ -1,4 +1,4 @@
-<div data-wb="role=include&template=wrapper.inc.php"></div>
+<meta data-wb="role=include&template=wrapper.inc.php">
 
 <div append="main">
 	<!-- Primary Page Layout
@@ -108,7 +108,7 @@
 								<div class="col-lg-6" data-wb="role=formdata&form=complex&item={{complex}}">
 									<p data-wb="role=tree&item=city&branch=districts->{{district}}&children=false"><strong class="color-black">Район:</strong><span> {{name}}</span></p>
 									<p data-wb="role=tree&item=city&branch=districts->{{district}}->{{metro}}&children=false"><strong class="color-black">Метро:</strong> <span> {{name}}</span></p>
-									<p><strong class="color-black">Расстояние до метро:</strong> {{metro_notice}}</p>
+									<p><strong class="color-black">До метро:</strong> {{metro_notice}}</p>
 									<p><strong class="color-black">Срок сдачи:</strong> {{quart}} квартал {{year}}</p>
 								</div>
 							</div>

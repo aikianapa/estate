@@ -1,5 +1,5 @@
 <?php
-phpinfo();
+
 require_once __DIR__ . "/engine/functions.php";
 ini_set('display_errors', TRUE);
 
@@ -26,6 +26,15 @@ $tpl=<<<DOM
     <div class="container">
     <div id="target">
       target:
+    </div>
+    <div data-wb="role=formdata&form=complex&item=5e455e5808ac">
+      <!--meta data-wb="role=module&load=yamap" name="geopos1" zoom="10" height="300" width="100%" center="59.918077 30.304899"-->
+
+      <div data-wb="role=module&load=yamap">
+        <meta role="geopos" value="50 50">
+        <meta role="geopos" value="51 51">
+        <meta role="geopos" value="52 52">
+      </div>
     </div>
 
 <h1>Inline FroalaEditor with autosave</h1>

@@ -15,8 +15,7 @@
           <div class="form-group row">
             <label class="col-sm-3 form-control-label">{{_lang.name}}</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control" name="name" placeholder="{{_lang.name}}"
-                required>
+              <input type="text" class="form-control" name="name" placeholder="{{_lang.name}}" required>
             </div>
           </div>
           <div class="nav-active-primary">
@@ -40,20 +39,21 @@
             <br />
             <div id="{{_form}}Descr" class="tab-pane fade show active" role="tabpanel">
 
-
               <div class="form-group row">
-                <label class="col-sm-3 form-control-label">{{_lang.geopos}}</label>
-                <div class="col-sm-9">
-                  <input type="text" class="form-control" name="geopos" placeholder="{{_lang.geopos}}">
+                <div class="col-12">
+                  <input data-wb="role=module&load=yamap" name="geopos" center="59.918077 30.304899" zoom="16">
                 </div>
               </div>
-
-              <input data-wb="role=module&load=yamap" name="geopos">
 
               <div class="form-group row">
                 <label class="col-sm-3 form-control-label">{{_lang.address}}</label>
                 <div class="col-sm-9">
-                  <input type="text" class="form-control" name="address" placeholder="{{_lang.address}}">
+                  <div class="input-group">
+                    <input type="text" class="form-control" name="address" placeholder="Адрес">
+                    <div class="input-group-append" style="cursor:alias;">
+                      <i class="input-group-text material-icons">location_searching</i>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -137,6 +137,7 @@
   </div>
 </div>
 
+<script src="/forms/complex/complex_edit.js"></script>
 <script type="text/locale">
 [en]
   title		= "Edit complex"

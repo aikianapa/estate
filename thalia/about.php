@@ -1,4 +1,4 @@
-<div data-wb="role=include&template=wrapper.inc.php"></div>
+<meta data-wb="role=include&template=wrapper.inc.php">
 
 <div append="main">
 	<!-- Primary Page Layout

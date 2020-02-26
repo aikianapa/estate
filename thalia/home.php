@@ -1,4 +1,4 @@
-<div data-wb="role=include&template=wrapper.inc.php"></div>
+<meta data-wb="role=include&template=wrapper.inc.php">
 
 <div append="main">
   <!-- Primary Page Layout
@@ -496,7 +496,7 @@
       </div>
     </div>
   </div>
+	<script type="wbapp" data-wb-where='"{{_item}}"="home"'>
+		wbapp.loadScripts(["js/reveal-home.js"]);
+	</script>
 </div>
-<script type="wbapp" data-wb-where='"{{_item}}"="home"'>
-	wbapp.loadScripts(["js/reveal-home.js"]);
-</script>
