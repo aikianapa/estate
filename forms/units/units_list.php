@@ -69,10 +69,10 @@
                       </thead>
                       <tbody data-wb="role=foreach&form={{_form}}&size={{_sett.page_size}}&sort=id" id="{{_form}}List">
                           <tr data-watcher="item={{id}}&watcher=#{{_form}}List">
-                              <div data-wb="role=formdata&form=complex&item={{complex}}&hide=true">
-                                <td class="nowrap">{{name}}</td>
-                                <td class="nowrap" data-wb="role=tree&item=city&branch={{district}}&children=false">{{name}}</td>
-                              </div>
+                              <td data-wb="role=formdata&form=complex&item={{complex}}" class="nowrap">{{name}}</td>
+                              <td data-wb="role=formdata&form=complex&item={{complex}}" class="nowrap">
+                                <span data-wb="role=tree&item=city&branch=districts->{{district}}&children=false"><span>{{name}}</span></span>
+                              </td>
                               <td class="text-center" data-wb="role=tree&item=types&branch={{type}}&children=false">{{name}}</td>
                               <td class="text-right">{{square}}</td>
                               <td class="text-right">{{price}}</td>
