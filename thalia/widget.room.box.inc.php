@@ -8,7 +8,7 @@
           <img class="room" data-wb="role=thumbnail&width=540&height=360" src="0" alt="">
       </picture>
       <picture data-wb-where='"{{images.0.img}}"=""' data-wb="role=formdata&form=complex&item={{complex}}">
-          <img class="room" data-wb="role=thumbnail&width=27&height=18" src="0" alt="">
+          <img class="room" data-wb="role=thumbnail&width=27&height=18" src="0" alt="" style="filter:blur(10px)">
       </picture>
   </a>
   <a href="/complex/{{complex}}/" class="room-complex">

@@ -1935,6 +1935,7 @@ select.form {
 	width: 100%;
 	display: block;
 	box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
 }
 .room-name {
 	position: absolute;
@@ -1968,7 +1969,7 @@ select.form {
 }
 
 .room-box img:hover {
-		transform: rotate(-2deg);
+		transform: rotate(-2deg) scale(1.1);
 		transition-duration: .3s;
 }
 
@@ -1983,7 +1984,7 @@ select.form {
 }
 
 .room-box img.complex:hover {
-		transform: rotate(5deg);
+		transform: rotate(-2deg);
 		transition-duration: .3s;
 }
 
