@@ -4,8 +4,18 @@
     {{price}} тыс.
   </div>
   <a href="/units/{{id}}/">
-  <img data-wb="role=thumbnail&width=540&height=360" src="0" alt="">
-</a>
+      <picture data-wb-where='"{{images.0.img}}">""'>
+          <img class="room" data-wb="role=thumbnail&width=540&height=360" src="0" alt="">
+      </picture>
+      <picture data-wb-where='"{{images.0.img}}"=""' data-wb="role=formdata&form=complex&item={{complex}}">
+          <img class="room" data-wb="role=thumbnail&width=27&height=18" src="0" alt="">
+      </picture>
+  </a>
+  <a href="/complex/{{complex}}/" class="room-complex">
+    <picture data-wb="role=formdata&form=complex&item={{complex}}">
+        <img class="complex" data-wb="role=thumbnail&width=270&height=180" src="0" alt="">
+    </picture>
+  </div>
   <div class="room-box-in">
     <h5 class="" data-wb="role=tree&item=types&branch=units&branch={{type}}"><span>{{name}}</span></h5>
     <div class="room-icons mt-4 pt-4">

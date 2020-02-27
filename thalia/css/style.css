@@ -1965,6 +1965,22 @@ select.form {
 	height: auto;
 	display: block;
 }
+
+.room-box img.complex {
+	width: 25%;
+	height: auto;
+	display: block;
+	position: absolute;
+	top: 70%;
+	right: 3%;
+}
+
+.room-box img.complex:hover {
+		transform: rotate(5deg);
+		transition-duration: .3s;
+}
+
+
 .room-box-in {
 	position: relative;
 	display: block;
