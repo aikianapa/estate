@@ -10,8 +10,7 @@
       </div>
       <div class="modal-body">
 
-        <form id="{{_form}}EditForm" data-wb-form="{{_form}}" data-wb-item="{{_item}}" class="form-horizontal"
-          role="form">
+        <form id="{{_form}}EditForm" data-wb-form="{{_form}}" data-wb-item="{{_item}}" class="form-horizontal" role="form">
           <div class="form-group row">
             <label class="col-sm-3 form-control-label">{{_lang.name}}</label>
             <div class="col-sm-9">
@@ -83,22 +82,40 @@
               <div class="form-group row">
                 <label class="col-sm-3 form-control-label">{{_lang.ready}}</label>
                 <div class="col-5 col-sm-3">
-                  <select data-wb="role=foreach&enum=[1,2,3,4]" name="quart" class="form-control">
-                    <option value="{{_value}}">{{_value}}</option>
-                  </select>
+                  <div class="input-group">
+                    <input type="number" class="form-control text-right" name="quart" readonly>
+                    <div class="input-group-append" style="cursor:alias;">
+                      <span class="input-group-text">квартал</span>
+                    </div>
+                  </div>
                 </div>
                 <div class="col-7 col-sm-3">
-                  <input type="number" min="2010" max="2100" class="form-control" name="year" placeholder="{{_lang.year}}">
+                  <div class="input-group">
+                    <input type="number" class="form-control text-right" name="year" readonly>
+                    <div class="input-group-append" style="cursor:alias;">
+                      <span class="input-group-text">год</span>
+                    </div>
+                  </div>
                 </div>
               </div>
 
               <div class="form-group row">
                 <label class="col-sm-3 form-control-label">{{_lang.levels}}</label>
                 <div class="col-6 col-sm-3">
-                  <input type="number" min="1" max="200" class="form-control" name="levels" placeholder="{{_lang.levels}}">
+                  <div class="input-group">
+                    <div class="input-group-prepend" style="cursor:alias;">
+                      <span class="input-group-text">от</span>
+                    </div>
+                    <input type="number" readonly class="form-control" name="levels_min">
+                  </div>
                 </div>
                 <div class="col-6 col-sm-3">
-                  <input type="number" min="1" max="200" class="form-control" name="levels_to" placeholder="{{_lang.levels}}">
+                  <div class="input-group">
+                    <div class="input-group-prepend" style="cursor:alias;">
+                      <span class="input-group-text">до</span>
+                    </div>
+                    <input type="number" readonly class="form-control" name="levels_max">
+                  </div>
                 </div>
               </div>
 
