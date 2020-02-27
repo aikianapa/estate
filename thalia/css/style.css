@@ -1964,6 +1964,12 @@ select.form {
 	width: 100%;
 	height: auto;
 	display: block;
+	transition-duration: .3s;
+}
+
+.room-box img:hover {
+		transform: rotate(-2deg);
+		transition-duration: .3s;
 }
 
 .room-box img.complex {
@@ -1973,6 +1979,7 @@ select.form {
 	position: absolute;
 	top: 70%;
 	right: 3%;
+	transition-duration: .3s;
 }
 
 .room-box img.complex:hover {
