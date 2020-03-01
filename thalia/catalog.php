@@ -6,7 +6,7 @@
 
   <div class="section big-55-height over-hide z-bigger">
 
-    <div class="parallax parallax-top" style="background-image: url('/uploads/pages/catalog/{{images.0.img}}')"></div>
+    <div class="parallax parallax-top" style="background-image: url('/thumb/1920x1080/src/uploads/pages/catalog/{{images.0.img}}')"></div>
     <div class="dark-over-pages"></div>
 
     <div class="hero-center-section pages">
