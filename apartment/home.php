@@ -361,29 +361,6 @@
 
 	</section>
 
-	<section class="section-light no-bottom-padding section-top-shadow">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 col-sm-9">
-					<h5 class="subtitle-margin">самое свежее</h5>
-							<h1>новинки<span class="special-color">.</span></h1>
-				</div>
-				<div class="col-xs-12 col-sm-3">
-					<a href="#" class="navigation-box navigation-box-next" id="grid-offers-owl-next"><div class="navigation-triangle"></div><div class="navigation-box-icon"><i class="jfont">&#xe802;</i></div></a>
-					<a href="#" class="navigation-box navigation-box-prev" id="grid-offers-owl-prev"><div class="navigation-triangle"></div><div class="navigation-box-icon"><i class="jfont">&#xe800;</i></div></a>
-				</div>
-				<div class="col-xs-12">
-					<div class="title-separator-primary"></div>
-				</div>
-			</div>
-		</div>
-		<div class="grid-offers-container">
-			<div class="owl-carousel" id="grid-offers-owl" data-wb="role=foreach&form=units&limit=7" data-wb-if='active="on"'>
-				<meta data-wb="role=include&template=offer.grid.inc.php">
-			</div>
-		</div>
-	</section>
-
 	<section class="section-light top-padding-45 bottom-padding-45">
 		<div class="container">
 			<div class="row count-container">
