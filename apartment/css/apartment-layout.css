@@ -3017,6 +3017,10 @@ html.no-pointerevents.no-touchevents .grid-offer-col:hover .grid-offer-front {
 	padding-right: 0px;
 }
 
+.blog-grid1-left-col:last-child {
+	padding-left: 0px;
+}
+
 .blog-grid1-right-col {
 	padding-left: 0px;
 }
@@ -3515,7 +3519,7 @@ footer address i.fa, .footer-blog-date i.fa {
 
 .move-top {
 	position: fixed;
-	bottom: 0px;
+	bottom: 50px!important;
 	right: 0px;
 	display: none;
 	width: 80px;

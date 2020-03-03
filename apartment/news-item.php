@@ -2,23 +2,21 @@
 
 <div append="main">
 
-	<section class="section-light section-top-shadow">
+	<section class="section-light section-top-shadow" data-wb="role=formdata&form={{_form}}&item={{_item}}">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-md-9">
 					<article class="archive-item zoom-cont2">
-						<h2 class="title-negative-margin">Mortgage rates are still low<span class="special-color">.</span></h2>
-						<a href="blog-right-sidebar.html#" class="title-link"><div class="blog-top-icon pull-left"><i class="fa fa-user"></i>Joshua Smith</div></a>
-						<a href="blog-right-sidebar.html#" class="title-link"><div class="blog-top-icon pull-left"><i class="fa fa-calendar-o"></i>28/09/15</div></a>
-						<a href="blog-right-sidebar.html#" class="title-link"><div class="blog-top-icon pull-left"><i class="fa fa-folder-open-o"></i>Some category</div></a>
-						<a href="blog-right-sidebar.html#" class="title-link"><div class="blog-top-icon pull-left"><i class="fa fa-comment-o"></i>2</div></a>
+						<h2 class="title-negative-margin">{{header}}<span class="special-color">.</span></h2>
+						<a href="blog-right-sidebar.html#" class="title-link"><div class="blog-top-icon pull-left"><i class="fa fa-user"></i>{{_env.user.first_name}}</div></a>
+						<a href="blog-right-sidebar.html#" class="title-link"><div class="blog-top-icon pull-left"><i class="fa fa-calendar-o"></i>{{date("d.m.Y",{{strtotime(date)}})}}</div></a>
+						<a href="/{{_form}}/" class="title-link"><div class="blog-top-icon pull-left"><i class="fa fa-folder-open-o"></i>Новости</div></a>
+
 						<div class="clearfix"></div>
 						<div class="title-separator-primary"></div>
-						<figure><a href="blog-right-sidebar.html#"><img src="images/blog-image5.jpg" alt="" class="zoom" /></a></figure>
+						<figure><a href="blog-right-sidebar.html#"><img data-wb="role=thumbnail&width=1700&height=725" src="0" alt="" class="zoom" data-wb-where='"{{images.0.img}}">""' /></a></figure>
 						<div class="blog-text">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						<br/><br/>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						{{text}}
 						</div>
 						<div class="agent-social-bar margin-top-30">
 							<div class="pull-left icon-margin blog-big-icon">
@@ -113,67 +111,11 @@
 							<p class="author-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 						</div>
 					</div>
-					<div class="margin-top-90"></div>
-					<h4 class="title-negative-margin">3 comments<span class="special-color">.</span></h4>
-					<div class="title-separator-primary"></div>
 
-					<div class="post-comment margin-top-45">
-						<div class="comment-left">
-							<img src="images/comment-photo1.jpg" alt="" />
-							<a href="blog-right-sidebar.html#" class="reply-link"><i class="fa fa-reply"></i>reply</a>
-						</div>
-						<div class="comment-right">
-							<div class="comment-author">Timothy Brown</div>
-							<div class="comment-date">23/07/15</div>
-							<div class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-
-					<div class="post-comment-indent">
-						<div class="comment-left">
-							<img src="images/comment-photo2.jpg" alt="" />
-							<a href="blog-right-sidebar.html#" class="reply-link"><i class="fa fa-reply"></i>reply</a>
-						</div>
-						<div class="comment-right">
-							<div class="comment-author">Sylvester Doe</div>
-							<div class="comment-date">23/07/15</div>
-							<div class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<div class="post-comment margin-top-30">
-						<div class="comment-left">
-							<img src="images/comment-photo1.jpg" alt="" />
-							<a href="blog-right-sidebar.html#" class="reply-link"><i class="fa fa-reply"></i>reply</a>
-						</div>
-						<div class="comment-right">
-							<div class="comment-author">Timothy Brown</div>
-							<div class="comment-date">23/07/15</div>
-							<div class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<div class="comment-form-cont">
-						<h4 class="title-negative-margin">leave a reply<span class="special-color">.</span></h4>
-						<p>Logged in as <a href="blog-right-sidebar.html#">admin</a>. Log out?</p>
-						<form name="comment-from" action="blog-right-sidebar.html#">
-							<textarea name="message" class="input-full agent-textarea main-input" placeholder="Reply"></textarea>
-							<div class="form-submit-cont">
-								<a href="blog-right-sidebar.html#" class="button-primary pull-right">
-									<span>send</span>
-									<div class="button-triangle"></div>
-									<div class="button-triangle2"></div>
-									<div class="button-icon"><i class="fa fa-pencil"></i></div>
-								</a>
-								<div class="clearfix"></div>
-							</div>
-						</form>
-					</div>
 				</div>
 				<div class="col-xs-12 col-md-3">
 					<div class="sidebar">
-						<h4 class="sidebar-title">categories<span class="special-color">.</span></h4>
+						<h4 class="sidebar-title">Категории<span class="special-color">.</span></h4>
 						<div class="title-separator-primary"></div>
 						<div class="margin-top-30"></div>
 						<ul class="blue-ul">
@@ -233,26 +175,16 @@
 							</div>
 						</div>
 						<div class="sidebar-title-cont">
-							<h4 class="sidebar-title">latest news<span class="special-color">.</span></h4>
+							<h4 class="sidebar-title">Последние новости<span class="special-color">.</span></h4>
 							<div class="title-separator-primary"></div>
 						</div>
-						<div class="sidebar-blog-cont">
+						<div class="sidebar-blog-cont"  data-wb="role=foreach&form=news&sort=date:d&limit=3">
 							<article>
-								<a href="blog-right-sidebar.html"><img src="images/footer-blog1.jpg" alt="" class="sidebar-blog-image" /></a>
-								<div class="sidebar-blog-title"><a href="blog-right-sidebar.html">This post title, lorem ipsum dolor sit</a></div>
-								<div class="sidebar-blog-date"><i class="fa fa-calendar-o"></i>28/09/15</div>
-								<div class="clearfix"></div>
-							</article>
-							<article>
-								<a href="blog-right-sidebar.html"><img src="images/footer-blog2.jpg" alt="" class="sidebar-blog-image" /></a>
-								<div class="sidebar-blog-title"><a href="blog-right-sidebar.html">This post title, lorem ipsum dolor sit</a></div>
-								<div class="sidebar-blog-date"><i class="fa fa-calendar-o"></i>28/09/15</div>
-								<div class="clearfix"></div>
-							</article>
-							<article>
-								<a href="blog-right-sidebar.html"><img src="images/footer-blog3.jpg" alt="" class="sidebar-blog-image" /></a>
-								<div class="sidebar-blog-title"><a href="blog-right-sidebar.html">This post title, lorem ipsum dolor sit</a></div>
-								<div class="sidebar-blog-date"><i class="fa fa-calendar-o"></i>28/09/15</div>
+								<a href="/news/{{id}}/">
+									<img data-wb="role=thumbnail&width=300&height=300" src="0" alt="" class="sidebar-blog-image" data-wb-where='"{{images.0.img}}">""' />
+								</a>
+								<div class="sidebar-blog-title"><a href="/news/{{id}}/">{{header}}</a></div>
+								<div class="sidebar-blog-date"><i class="fa fa-calendar-o"></i>{{date("d.m.Y",{{strtotime(date)}})}}</div>
 								<div class="clearfix"></div>
 							</article>
 						</div>

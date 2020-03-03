@@ -1147,7 +1147,7 @@ html.no-pointerevents.no-touchevents .team-member:hover .team-name {
 }
 
 .big-triangle-second-color  {
-	border-color: transparent transparent #0c1218 transparent;
+	border-color: transparent;
 }
 
 .big-triangle2 {
