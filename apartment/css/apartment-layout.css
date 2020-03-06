@@ -2477,6 +2477,10 @@ html.no-pointerevents.no-touchevents .team-member:hover .big-triangle2 {
 	width: 100%;
 }
 
+.list-offer-text table{
+	margin-bottom:40px;
+}
+
 h4.list-offer-title {
 	text-transform: none;
 	font-size: 1.38em;

@@ -17,7 +17,7 @@
         <img src="images/area-icon.png" alt="" /><span>{{square}}м</span><sup>2</sup>
       </div>
       <div class="featured-rooms" data-wb="role=tree&item=types&branch=units&branch={{type}}">
-        <img src="images/rooms-icon.png" alt="" />3
+        <img src="images/rooms-icon.png" alt="" /><span>{{data.alt}}</span>
       </div>
     </div>
     <div class="featured-price">

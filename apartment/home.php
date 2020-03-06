@@ -4,19 +4,19 @@
 
 	<section class="adv-search-section no-padding">
 		<meta data-wb="role=include&template=widget.home.map.inc.php">
-		<form class="adv-search-form" action="index-map.html#" id="propertiesFilterForm">
+		<form class="adv-search-form" action="#" id="propertiesFilterForm">
 			<div class="adv-search-cont">
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-lg-11 adv-search-icons">
 							<!-- Nav tabs -->
 							<ul class="nav nav-tabs adv-search-tabs" role="tablist">
-								<li role="presentation" class="active" data-toggle="tooltip" data-placement="top" title="По районам"><a href="index-map.html#apartments" aria-controls="apartments" role="tab" data-toggle="tab" id="adv-search-tab1"><i class="fa fa-building"></i></a></li>
-								<li role="presentation" data-toggle="tooltip" data-placement="top" title="По метро"><a href="index-map.html#houses" aria-controls="houses" role="tab" data-toggle="tab" id="adv-search-tab2"><i class="fa fa-home"></i></a></li>
+								<li role="presentation" class="active" data-toggle="tooltip" data-placement="top" title="По районам"><a href="#apartments" aria-controls="apartments" role="tab" data-toggle="tab" id="adv-search-tab1"><i class="fa fa-building"></i></a></li>
+								<li role="presentation" data-toggle="tooltip" data-placement="top" title="По метро"><a href="#houses" aria-controls="houses" role="tab" data-toggle="tab" id="adv-search-tab2"><i class="fa fa-home"></i></a></li>
 							</ul>
 						</div>
 						<div class="col-lg-1 visible-lg">
-							<a id="adv-search-hide" href="index-map.html#"><i class="jfont">&#xe801;</i></a>
+							<a id="adv-search-hide" href="#"><i class="jfont">&#xe801;</i></a>
 						</div>
 					</div>
 				</div>
@@ -154,7 +154,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12 col-md-6 col-lg-3 col-md-offset-6 col-lg-offset-9 adv-search-button-cont">
-							<a href="index-map.html#" class="button-primary pull-right">
+							<a href="#" class="button-primary pull-right">
 								<span>Найти</span>
 								<div class="button-triangle"></div>
 								<div class="button-triangle2"></div>
@@ -312,8 +312,8 @@
 							<h1 class="second-color">our clients say<span class="special-color">.</span></h1>
 				</div>
 				<div class="col-xs-12 col-sm-3">
-					<a href="index-map.html#" class="navigation-box navigation-box-next" id="testimonials-owl-next"><div class="navigation-triangle"></div><div class="navigation-box-icon"><i class="jfont">&#xe802;</i></div></a>
-					<a href="index-map.html#" class="navigation-box navigation-box-prev" id="testimonials-owl-prev"><div class="navigation-triangle"></div><div class="navigation-box-icon"><i class="jfont">&#xe800;</i></div></a>
+					<a href="#" class="navigation-box navigation-box-next" id="testimonials-owl-next"><div class="navigation-triangle"></div><div class="navigation-box-icon"><i class="jfont">&#xe802;</i></div></a>
+					<a href="#" class="navigation-box navigation-box-prev" id="testimonials-owl-prev"><div class="navigation-triangle"></div><div class="navigation-box-icon"><i class="jfont">&#xe800;</i></div></a>
 				</div>
 				<div class="col-xs-12">
 					<div class="title-separator-secondary"></div>

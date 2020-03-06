@@ -22,6 +22,28 @@ function complexEmptyItemRead(&$Item = []) {
     return $Item;
 }
 
+function complexView($item) {
+  $app = new wbApp();
+  $units = wbItemList("units",'active = "on" AND complex = "'.$item["id"].'"');
+  $groups = $app->json($units)->groupBy("type")->get();
+  $units = [];
+  foreach($groups as $type => $group) {
+    $group = $app->json($group);
+    $unit = [
+      "type" => $type
+      ,"price_min" => $group->min("price")
+      ,"price_max" => $group->max("price")
+      ,"square_min" => $group->min("square")
+      ,"square_max" => $group->max("square")
+      ,"count" => $group->count()
+    ];
+    $units[] = $unit;
+  }
+  $item["unitslist"] = $units;
+  return $item;
+}
+
+
 function complexBeforeItemSave(&$Item) {
   $Item["levels_min"] = 0;
   $Item["levels_max"] = 0;
