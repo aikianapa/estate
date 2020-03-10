@@ -196,32 +196,23 @@
 <!-- jQuery  -->
     <script type="text/javascript" src="js/jQuery/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jQuery/jquery-ui.min.js"></script>
-		<script append="body" src="/engine/js/wbapp.js"></script>
 
-<!-- Bootstrap-->
-    <script type="text/javascript" src="bootstrap/bootstrap.min.js"></script>
 
-<!-- plugins script -->
-	<script type="text/javascript" src="js/plugins.js"></script>
-
-<!-- template scripts -->
-	<script type="text/javascript" src="mail/validate.js"></script>
-    <script type="text/javascript" src="js/apartment.js"></script>
 
 		<!--
 				<meta data-wb="role=snippet&load=jquery">
 				<meta data-wb="role=snippet">
 				<meta data-wb="role=snippet&load=fontawesome4">
-
+-->
 				<script type="wbapp">
 						wbapp.loadScripts([
-								,"js/plugins.js"
 								,"bootstrap/bootstrap.min.js"
+								,"js/plugins.js"
 								,"mail/validate.js"
 								,"js/apartment.js"
 						],"all-ready");
 
-				</script-->
+				</script>
 				<script append="body" src="/engine/js/wbapp.js"></script>
 
 	</body>

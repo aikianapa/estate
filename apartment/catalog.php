@@ -2,18 +2,7 @@
 
 <div append="main">
 
-	<section class="short-image no-padding blog-short-title">
-
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-lg-12 short-image-title">
-				<h5 class="subtitle-margin second-color">жилые комплексы</h5>
-				<h1 class="second-color">{{header}}</h1>
-				<div class="short-title-separator"></div>
-			</div>
-		</div>
-	</div>
-	</section>
+<meta data-wb="role=include&template=section.mapfilter.inc.php">
 
 	<section class="section-light section-top-shadow">
 		<div class="container">
@@ -42,7 +31,7 @@
 								<div class="title-separator-primary"></div>
 							</div>
 						</div>
-						<div class="row list-offer-row" data-wb="role=foreach&form=complex&size=10&walk=complexView" data-wb-if='active="on"'>
+						<div class="row list-offer-row" id="propertiesList" data-wb="role=foreach&form=complex&size=10&walk=complexView" data-wb-if='active="on"'>
 							<div class="col-xs-12">
 								<meta data-wb="role=include&template=offer.list.inc.php">
 							</div>

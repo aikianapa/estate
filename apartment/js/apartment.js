@@ -173,6 +173,13 @@ jQuery(document).ready(function($) {
 
 
 (function( $ ){
+
+
+  $(document).on("watcher_change",function(e,changed){
+      if (changed == "#propertiesFilterForm [name=complex]") $("#propertiesFilterForm [name=complex]").selectpicker('refresh');
+  });
+
+
 	$.fn.ApartmentOnload = function() {
 
 
@@ -349,7 +356,7 @@ jQuery(document).ready(function($) {
 
 
 /********** RANGE SLIDER **********/
-/*
+
 
 
 		$(".slider-range").each( function( index ) {
@@ -366,7 +373,7 @@ jQuery(document).ready(function($) {
 			$( "#" + sliderId + "-value" ).val( $( this ).slider( "values", 0 ) + " - " + $( this ).slider( "values", 1 ) );
 		});
 
-*/
+
 
 /********** LIGHTGALLERY INITIALIZATION **********/
 

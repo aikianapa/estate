@@ -62,7 +62,7 @@
           <div class="form-group row">
             <label class="col-6 col-sm-3 form-control-label">{{_lang.square}}</label>
             <div class="col-6 col-sm-3">
-              <input type="number" class="form-control" name="square" placeholder="{{_lang.square}}">
+              <input type="number" class="form-control" name="square" step="0.01" placeholder="{{_lang.square}}">
             </div>
             <label class="col-6 col-sm-3 form-control-label">{{_lang.price}}</label>
             <div class="col-6 col-sm-3">
