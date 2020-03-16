@@ -174,15 +174,43 @@ jQuery(document).ready(function($) {
 
 (function( $ ){
 
-
-  $(document).on("watcher_change",function(e,changed){
-      if (changed == "#propertiesFilterForm [name=complex]") $("#propertiesFilterForm [name=complex]").selectpicker('refresh');
-  });
-
-
 	$.fn.ApartmentOnload = function() {
 
+    /********** RANGE SLIDER **********/
 
+    var ranges = function() {
+    		$(".slider-range").each( function( index ) {
+    			var sliderId = $( this ).attr('id');
+    			$( this ).slider({
+    				 range: true,
+    				 min:  parseFloat($( this ).attr("data-min")),
+    				 max: parseFloat($( this ).attr("data-max")),
+    				 values: [ parseFloat($( this ).attr("data-min")), parseFloat($( this ).attr("data-max")) ],
+    				 slide: function( event, ui ) {
+    					$( "#" + sliderId + "-value" ).val( ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+              $("#propertiesFilterForm [name='_filter[price_min]']").attr("value",ui.values[ 0 ]);
+              $("#propertiesFilterForm [name='_filter[price_max]']").attr("value",ui.values[ 1 ]);
+    				 }
+    			});
+    			$( "#" + sliderId + "-value" ).val( $( this ).slider( "values", 0 ) + " - " + $( this ).slider( "values", 1 ) );
+    		});
+    }
+    ranges();
+
+
+
+    $(document).on("watcher_change",function(e,result){
+      if (result.change == "#propertiesFilterForm [name='_filter[complex][]']") {
+          $("#propertiesFilterForm [name='_filter[complex][]']").selectpicker('refresh');
+          if (result.return["min-price_min"]) $("#propertiesFilterForm #slider-range-price1").attr("data-min",result.return["min-price_min"]);
+          if (result.return["max-price_max"]) $("#propertiesFilterForm #slider-range-price1").attr("data-max",result.return["max-price_max"]);
+          if (result.return["min-square_min"]) $("#propertiesFilterForm #slider-range-area1").attr("data-min",result.return["min-square_min"]);
+          if (result.return["max-square_max"]) $("#propertiesFilterForm #slider-range-area1").attr("data-max",result.return["max-square_max"]);
+
+          ranges();
+      }
+    });
+    $("#propertiesFilterForm [name='_filter[district]']").trigger("change");
 
 /********** SWIPER - HOMEPAGE SLIDER **********/
 
@@ -352,28 +380,6 @@ jQuery(document).ready(function($) {
 				$(this).parent().children('a').removeClass( "hover-menu" );
 			}
 		);
-
-
-
-/********** RANGE SLIDER **********/
-
-
-
-		$(".slider-range").each( function( index ) {
-			var sliderId = $( this ).attr('id');
-			$( this ).slider({
-				 range: true,
-				 min:  parseFloat($( this ).attr("data-min")),
-				 max: parseFloat($( this ).attr("data-max")),
-				 values: [ parseFloat($( this ).attr("data-min")), parseFloat($( this ).attr("data-max")) ],
-				 slide: function( event, ui ) {
-					$( "#" + sliderId + "-value" ).val( ui.values[ 0 ] + " - " + ui.values[ 1 ] );
-				 }
-			});
-			$( "#" + sliderId + "-value" ).val( $( this ).slider( "values", 0 ) + " - " + $( this ).slider( "values", 1 ) );
-		});
-
-
 
 /********** LIGHTGALLERY INITIALIZATION **********/
 
@@ -793,8 +799,6 @@ jQuery(document).ready(function($) {
 
 
 /********** MASONRY LAYOUT **********/
-
-
 $(document).on("ready",function(){
 		if( $('.masonry-grid').length ) {
 			$masonryGrid = $('.masonry-grid').isotope({
@@ -1055,7 +1059,6 @@ $(document).on("ready",function(){
 
   jQuery('html').ApartmentOnload();
 })(jQuery);
-
 
 
 

@@ -74,6 +74,7 @@ function complexBeforeItemSave(&$Item) {
 
 function complexBeforeItemShow(&$Item) {
     $Item["image"] = wbGetItemImg($Item);
+    $Item["complex"] = $Item["id"]; // нужно для фильтра
     return $Item;
 }
 

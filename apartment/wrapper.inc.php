@@ -10,16 +10,7 @@
 	<meta name="description" content="Download Apartment - Premium Real Estate HMTL Site Template" />
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
-	<!-- Font awesome styles -->
-	<link rel="stylesheet" href="apartment-font/css/font-awesome.min.css">
-	<!-- Custom styles -->
-	<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic,500,500italic,700,700italic&amp;subset=latin,latin-ext'>
-	<link rel="stylesheet" type="text/css" href="css/plugins.css">
-    <link rel="stylesheet" type="text/css" href="css/apartment-layout.css">
-    <link id="skin" rel="stylesheet" type="text/css" href="css/apartment-colors-blue.css">
+  <link rel="stylesheet" href="css/loader.css">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -194,15 +185,17 @@
 
 
 <!-- jQuery  -->
-    <script type="text/javascript" src="js/jQuery/jquery.min.js"></script>
+    <meta data-wb="role=snippet&load=jquery">
+		<script type="text/javascript" src="/engine/js/jquery-migrate.min.js"></script>
 		<script type="text/javascript" src="js/jQuery/jquery-ui.min.js"></script>
+		<script append="body" src="/engine/js/wbapp.js"></script>
 
-
+		<meta data-wb="role=snippet&load=fontawesome4">
 
 		<!--
 				<meta data-wb="role=snippet&load=jquery">
 				<meta data-wb="role=snippet">
-				<meta data-wb="role=snippet&load=fontawesome4">
+
 -->
 				<script type="wbapp">
 						wbapp.loadScripts([
@@ -211,9 +204,15 @@
 								,"mail/validate.js"
 								,"js/apartment.js"
 						],"all-ready");
+						wbapp.loadStyles([
+								"bootstrap/bootstrap.min.css"
+								,"css/plugins.css"
+								,"css/apartment-layout.css"
+								,"css/apartment-colors-blue.css"
 
+						]);
 				</script>
-				<script append="body" src="/engine/js/wbapp.js"></script>
+
 
 	</body>
 </html>
