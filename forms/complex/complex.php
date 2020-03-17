@@ -43,7 +43,6 @@ function complexView($item) {
   return $item;
 }
 
-
 function complexBeforeItemSave(&$Item) {
   $Item["levels_min"] = 0;
   $Item["levels_max"] = 0;
