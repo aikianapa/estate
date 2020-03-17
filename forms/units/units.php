@@ -36,7 +36,12 @@ function unitsAfterItemSave($Item) {
     }
     $compl = wbItemRead("complex",$complex);
     $compl = array_merge($compl,wbObjToArray($c_data));
-    $compl["buildings"]["data"][$building]["data"] = array_merge($compl["buildings"]["data"][$building]["data"],wbObjToArray($b_data));
+    if (@isset($compl["buildings"]["data"][$building]["data"])) {
+        $compl["buildings"]["data"][$building]["data"] = array_merge($compl["buildings"]["data"][$building]["data"],wbObjToArray($b_data));
+    } else {
+        $compl["buildings"]["data"][$building]["data"] = wbObjToArray($b_data);
+    }
+
     wbItemSave("complex",$compl);
 }
 
